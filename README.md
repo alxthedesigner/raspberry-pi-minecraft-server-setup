@@ -1,12 +1,11 @@
-# Create a Modded NeoForge Minecraft Server on Raspberry Pi 5
-This document is for Minecraft users who want a continuously running Minecraft server but do not want to keep their main laptop/desktop running at all times. You will learn how to set up a raspberry pi, how to set up your Minecraft server with your world + mods, and how to enable friends to connect to the world remotely.
+# Create a Modded Minecraft Server on Raspberry Pi 5
+This README is for a continuously running Minecraft server on Raspberry Pi 5. This will show you how to set up a raspberry pi, how to set up a Minecraft server with your world + mods, and how to enable friends to connect to the world remotely. There are also a few extra steps for Steam Deck users who want to add Minecraft to their Steam gaming library.
 
 - 16GB Raspberry Pi 5 with a 128GB micro SD card (Fall 2025)
 - Minecraft version 26.3
 - NeoForge version 26.3.0.60-beta (26.3.0.76, the first stable 26.3 build, also works)
 - Java 25
 
-This repo also includes a [Server Manager](server-manager/README.md): a desktop admin app, a Pi API and a player website for running the server without typing commands.
 
 ## Table of Contents
 1. Prerequisites
