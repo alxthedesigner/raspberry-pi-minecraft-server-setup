@@ -1,14 +1,16 @@
-# Minecraft Server Manager
+# Minecraft Server Management App
 
-A management system for a modded NeoForge Minecraft server running on a Raspberry Pi. Tested with Minecraft 26.3 and NeoForge 26.3.0.60-beta / 26.3.0.76.
+A management application for modded Minecraft servers.
+
+Tested on NeoForge Minecraft server running on a Raspberry Pi. Tested with Minecraft 26.3 and NeoForge 26.3.0.60-beta / 26.3.0.76.
 
 There are three parts:
 
 | Part | Runs on | What it does |
 |---|---|---|
-| **API** (`pi-backend/`) | Raspberry Pi | FastAPI service that starts/stops the server, sends console commands over RCON, manages mods, whitelist and config files, and streams the server log over WebSocket. Port 8080. |
-| **Admin app** (`admin-app/`) | Your Mac or PC | PyQt6 desktop dashboard for the API. |
-| **Player portal** (`player-portal/`) | Raspberry Pi | Small Flask website where players see server status, download the mods and request whitelist access. Port 5000. |
+| **Server API** (`pi-backend/`) | Raspberry Pi | FastAPI service that starts/stops the server, sends console commands over RCON, manages mods, whitelist and config files, and streams the server log over WebSocket. Port 8080. |
+| **Server Manager App** (`admin-app/`) | Your Mac or PC | Desktop application and dashboard to interact with the Minecraft server via the server API. |
+| **Player portal** (`player-portal/`) | Raspberry Pi | A Flask website where online players see server status, download the mods and request whitelist access. Port 5000. |
 
 Players and the admin reach the Pi over [Tailscale](https://tailscale.com), so none of these ports need to be opened to the internet.
 
